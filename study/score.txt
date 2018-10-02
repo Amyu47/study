@@ -1,0 +1,9 @@
+コスト,Dijkstra,1
+重み,Dijkstra,1
+最短,Dijkstra,1
+単一,Dijkstra,1
+全点,WarshallFloyd,2
+部分列,LongestIncreasingSubsequence,1
+増加,LongestIncreasingSubsequence,1
+何個,DynamicProgramming,1
+選,DynamicProgramming,1
