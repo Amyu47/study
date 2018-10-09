@@ -7,3 +7,5 @@
 ‘‰Á,LongestIncreasingSubsequence,1
 ‰½ŒÂ,DynamicProgramming,1
 ‘I,DynamicProgramming,1
+Å‘åŒö–ñ”,EuclideanAlgorithm,1
+‘f”,TheSieveOfEratosthenes,1
