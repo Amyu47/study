@@ -8,3 +8,6 @@ LongestIncreasingSubsequence
 EuclideanAlgorithm
 TheSieveOfEratosthenes
 TopologicalSort
+UnionFind
+MinimumSpanningTree
+Imos
