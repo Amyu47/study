@@ -17,3 +17,4 @@ DAG,TopologicalSort,1
 “à•ï,GrahamScan,1
 Œğ·,Intersection,1
 –ÊÏ,Area,1
+•¶š—ñPatternMatch,1
