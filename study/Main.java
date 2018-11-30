@@ -48,11 +48,11 @@ class Main{
        			t = rest.split("<", 0);
        		}
        		for(int j=0;j<t.length;j++){
-       			if(t[j].charAt(0)=='-'){
+       			if(t[j].charAt(0)=='-' && counterList[algorithmList.get("BellmanFord")]!=0){
        				counterList[algorithmList.get("BellmanFord")] += 5;
        			}
        			if(i==0 && j==2){
-       				if(500>Integer.parseInt(t[j])){
+       				if(500>Integer.parseInt(t[j]) && counterList[algorithmList.get("WarshallFloyd")]!=0){
        					counterList[algorithmList.get("WarshallFloyd")] += 3;
        				}
        			}
@@ -64,6 +64,10 @@ class Main{
        		if(max<counterList[i]){
        			now = i;
        			max = counterList[i];
+       		}
+       		if(counterList[i]!=0){
+       			System.out.print(counterList[i]+" ");
+       			output(i, algorithmList);
        		}
        	}
        	output(now, algorithmList);
