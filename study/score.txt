@@ -2,11 +2,13 @@
 重み,Dijkstra,1
 最短,Dijkstra,1
 単一,Dijkstra,1
-全点,WarshallFloyd,2
+道,Dijkstra,1
+全点,Dijkstra,1
 部分列,LongestIncreasingSubsequence,1
 増加,LongestIncreasingSubsequence,1
 先頭,LongestIncreasingSubsequence,1
 末尾,LongestIncreasingSubsequence,1
+通り,DynamicProgramming,1
 何個,DynamicProgramming,1
 選,DynamicProgramming,1
 最大公約数,EuclideanAlgorithm,1
@@ -18,10 +20,10 @@ DAG,TopologicalSort,1
 連結,UnionFind,1
 判定,UnionFind,1
 共通,UnionFind,1
-道,MinimumSpanningTree,1
 森,MinimumSpanningTree,1
 時間,Imos,1
 時刻,Imos,1
+区間,Imos,1
 直線,Imos,1
 連続,Imos,1
 凸,GrahamScan,1

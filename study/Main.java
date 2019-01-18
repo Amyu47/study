@@ -8,7 +8,7 @@ class Main{
     }
 
     public static void solve(){
-       	String s = problem();
+       	ArrayList<String> s = problem();
        	ArrayList<String> restList = restriction();
        	/*ArrayList<String> wordList = word();
 
@@ -31,10 +31,13 @@ class Main{
 
        	int[] counterList = new int[algorithmList.size()];
        	for(String key : scoreList.keySet()){
-       		if(s.matches(".*"+key+".*")){
-       			String[] t = scoreNameList.get(key);
-       			for(int i=0;i<t.length;i++){
-	       			counterList[algorithmList.get(t[i])] += scoreList.get(key);
+       		for(int j=0;j<s.size();j++){
+       			String u = s.get(j);
+		       	if(u.matches(".*"+key+".*")){
+       				String[] t = scoreNameList.get(key);
+       				for(int i=0;i<t.length;i++){
+	       				counterList[algorithmList.get(t[i])] += scoreList.get(key);
+   					}
    				}
        		}
        	}
@@ -48,11 +51,11 @@ class Main{
        			t = rest.split("<", 0);
        		}
        		for(int j=0;j<t.length;j++){
-       			if(t[j].charAt(0)=='-' && counterList[algorithmList.get("BellmanFord")]!=0){
+       			if(t[j].charAt(0)=='-' && counterList[algorithmList.get("Dijkstra")]!=0){
        				counterList[algorithmList.get("BellmanFord")] += 5;
        			}
        			if(i==0 && j==2){
-       				if(500>Integer.parseInt(t[j]) && counterList[algorithmList.get("WarshallFloyd")]!=0){
+       				if(500>Integer.parseInt(t[j]) && counterList[algorithmList.get("Dijkstra")]!=0){
        					counterList[algorithmList.get("WarshallFloyd")] += 3;
        				}
        			}
@@ -73,10 +76,17 @@ class Main{
        	output(now, algorithmList);
     }	
 
-    public static String problem(){
-    	System.out.println("Input the problem");
-    	Scanner sc = new Scanner(System.in);
-    	String s = sc.next();
+    public static ArrayList<String> problem(){
+    	System.out.println("Input the problem(end only 0)");
+    	ArrayList<String> s = new ArrayList<String>();
+    	while(true){		
+		    Scanner sc = new Scanner(System.in);
+		    String t = sc.next();
+		    if(t.equals("0")){
+		    	break;
+		    }
+		    s.add(t);
+    	}
     	return s;
     }
 
