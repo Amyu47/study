@@ -61,6 +61,13 @@ class Main{
        			}
        		}
        	}
+       	if(restList.size()<=2 && (counterList[algorithmList.get("Dijkstra")]!=0 || counterList[algorithmList.get("BFS")]!=0)){
+       		counterList[algorithmList.get("BFS")] += 1;
+       	}
+       	if(restList.size()<=2 && (counterList[algorithmList.get("Dijkstra")]!=0 || counterList[algorithmList.get("DFS")]!=0)){
+       		counterList[algorithmList.get("DFS")] += 1;
+       	}
+
        	int now = 0;
        	int max = counterList[now]; 
        	for(int i=1;i<algorithmList.size();i++){
@@ -69,8 +76,8 @@ class Main{
        			max = counterList[i];
        		}
        		if(counterList[i]!=0){
-       			System.out.print(counterList[i]+" ");
-       			output(i, algorithmList);
+       			//System.out.print(counterList[i]+" ");
+       			//output(i, algorithmList);
        		}
        	}
        	output(now, algorithmList);

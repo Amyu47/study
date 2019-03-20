@@ -1,3 +1,5 @@
+スタック,DFS,1
+キュー,BFS,1
 コスト,Dijkstra,1
 重み,Dijkstra,1
 最短,Dijkstra,1
@@ -8,6 +10,8 @@
 増加,LongestIncreasingSubsequence,1
 先頭,LongestIncreasingSubsequence,1
 末尾,LongestIncreasingSubsequence,1
+枚数,DynamicProgramming,1
+いくら,DynamicProgramming,1
 通り,DynamicProgramming,1
 何個,DynamicProgramming,1
 選,DynamicProgramming,1
